@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Kunst Café" %}{% endblock %}
+
+{% block main %}
+
+    {% static 'media/uploads/art-1.jpg' as static_1 %}
+    {% static 'media/uploads/art-2.jpg' as static_2 %}
+    {% static 'media/uploads/art-3.png' as static_3 %}
+    {% static 'media/uploads/art-4.jpg' as static_4 %}
+    {% static 'media/uploads/art-5.jpg' as static_5 %}
+
+    {% blocktrans %}
+    <div class="row">
+        <div class="large-6 small-12 columns image-block-col">
+            <div class="image-block scroll-fade-in">
+                <div class="image">
+                    <img src="{{ static_1 }}" alt="Our idea is to show people what Norwegian artists can do." />
+
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="caption-image">
+                    <a href="/about">
+                        <h4>Our idea is to show people what Norwegian artists can do.</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-6 small-12 columns image-block-col">
+            <div class="image-block scroll-fade-in">
+                <div class="image">
+                    <img src="{{ static_2 }}" alt="We focus on art, that is why we are in a very beautiful place - Lokstallen" />
+
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="caption-image">
+                    <a href="/about">
+                        <h4>We focus on art, that is why we are in a very beautiful place - Lokstallen</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-6 small-12 columns image-block-col">
+            <div class="image-block scroll-fade-in">
+                <div class="image">
+                    <img src="{{ static_3 }}" alt="We believe that everyone has artist inside, take a shot and join us" />
+
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="caption-image">
+                    <a href="/application-form">
+                        <h4>We believe that everyone has artist inside, take a shot and join us</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-6 small-12 columns image-block-col">
+            <div class="image-block scroll-fade-in">
+                <div class="image">
+                    <img src="{{ static_4 }}" alt="Take off a few hours from everyday routine" />
+
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="caption-image">
+                    <a href="/calendar">
+                        <h4>Take off a few hours from everyday routine</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-6 small-12 columns image-block-col">
+            <div class="image-block scroll-fade-in">
+                <div class="image">
+                    <img src="{{ static_5 }}" alt="Every artist in history has its own unique and very interesting stories to tell; we have a few too" />
+
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="caption-image">
+                    <a href="/blog">
+                        <h4>Every artist in history has its own unique and very interesting stories to tell; we have a few too</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblocktrans %}
+{% endblock %}
