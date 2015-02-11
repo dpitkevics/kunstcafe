@@ -20,7 +20,8 @@
         {% endfor %}
     </p>
     {% elif field.help_text %}
-    <p class="help-block">{{ field.help_text }}</p>
+        <p class="label secondary help-block">{{ field.help_text|capfirst }}</p>
+        <hr />
     {% endif %}
 </div>
 {% endif %}

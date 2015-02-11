@@ -44,9 +44,9 @@ $(function () {
         controller.triggerCheckAnim();
     });
 
-    $(".image-block").each (function () {
+    $(".image-block, .scroll-fade-in").each (function () {
         var offsetTop = $(this).offset().top;
-        controller.addTween(offsetTop - ($(window).height() / 2), TweenMax.from($(this), 0.5, {css:{opacity:0, "margin-top":"50px"}}));
+        controller.addTween(offsetTop - ($(window).height() / 1), TweenMax.from($(this), 0.5, {css:{opacity:0, "margin-top":"50px"}}));
     });
 
 

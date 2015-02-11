@@ -176,6 +176,7 @@ i.social.fa-instagram {
 
 .image {
     position: relative;
+    display: block;
 }
 
 .image > img {
@@ -301,4 +302,23 @@ td.fc-header-left, td.fc-header-right {
     height: auto;
     background: transparent;
     display: inline;
+}
+
+#id_value {
+    list-style-type: none;
+    margin: 0;
+}
+
+#id_value > li {
+    float: left;
+    width: 30px;
+}
+
+#rating-list {
+    margin-bottom: 0;
+}
+
+.blog-row {
+    max-height: 300px;
+    overflow: hidden;
 }

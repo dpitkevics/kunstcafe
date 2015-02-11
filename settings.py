@@ -253,6 +253,7 @@ INSTALLED_APPS = (
     #"mezzanine.mobile",
     #"mezzanine-foundation",
     "mezzanine_slides",
+    "pageimages",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -310,6 +311,12 @@ OPTIONAL_APPS = (
     "compressor",
     PACKAGE_NAME_FILEBROWSER,
     PACKAGE_NAME_GRAPPELLI,
+)
+
+BLOG_USE_FEATURED_IMAGE = True
+
+PAGEIMAGE_TYPES = (
+    ('BACKGROUND', 'Main banner image'),
 )
 
 ###################
